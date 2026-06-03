@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -733,6 +734,201 @@
     font-size: 12.5px;
     color: var(--text-light);
   }
+
+  /* ─── MOBILE RESPONSIVE ─── */
+  @media (max-width: 768px) {
+
+    /* NAV */
+    nav {
+      padding: 0 16px;
+      height: auto;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 12px 16px;
+    }
+    .nav-links { display: none; }
+    .search-bar { display: none; }
+    .btn-join { padding: 8px 16px; font-size: 13px; }
+
+    /* HERO */
+    .hero {
+      flex-direction: column;
+      padding: 32px 20px 40px;
+      gap: 30px;
+      text-align: center;
+    }
+    .hero-left h1 { font-size: 26px; }
+    .hero-left p { font-size: 14px; max-width: 100%; }
+    .hero-btns { justify-content: center; flex-direction: column; align-items: center; gap: 20px; }
+    .btn-primary { width: 100%; justify-content: center; }
+    .btn-outline { width: 100%; text-align: center; }
+    .hero-right { width: 100%; }
+    .hero-card { padding: 24px 20px; max-width: 100%; }
+    .hero-card-logo { font-size: 28px; }
+
+    /* COLORFUL WORLD */
+    .section-world { padding: 40px 20px; }
+    .world-grid { grid-template-columns: 1fr; gap: 16px; }
+    .section-title { font-size: 22px; }
+
+    /* FEATURED PRODUCTS */
+    section#products { padding: 40px 20px !important; }
+    .cards-grid { grid-template-columns: 1fr; gap: 20px; }
+    .featured-header { flex-direction: column; gap: 12px; }
+    .nav-arrows { align-self: flex-end; }
+
+    /* WHY PARENTS */
+    .section-why { padding: 40px 20px; }
+    .why-grid { grid-template-columns: 1fr 1fr; gap: 24px 16px; }
+
+    /* MY STORY */
+    .section-story-card { padding: 28px 20px !important; }
+    .story-highlights { flex-direction: column !important; }
+
+    /* TESTIMONIALS */
+    .section-testimonials { padding: 40px 20px 0; }
+    .testi-grid { grid-template-columns: 1fr; gap: 16px; }
+
+    /* NEWSLETTER */
+    .section-newsletter { padding: 24px 20px 48px; }
+    .newsletter-box {
+      flex-direction: column;
+      padding: 28px 20px;
+      gap: 20px;
+      text-align: center;
+    }
+    .newsletter-form { flex-direction: column; width: 100%; }
+    .email-field { width: 100%; }
+    .btn-join { width: 100%; text-align: center; }
+
+    /* WAITING LIST */
+    section#waitlist { padding: 48px 20px !important; }
+
+    /* FOOTER */
+    footer { padding: 36px 20px 20px; }
+    .footer-top {
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+    .footer-brand { grid-column: 1 / -1; }
+
+    /* STORY SECTION */
+    section[style*="My Story"] { padding: 48px 20px !important; }
+  }
+
+  @media (max-width: 480px) {
+    .hero-left h1 { font-size: 22px; }
+    .why-grid { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr; }
+    .section-title { font-size: 20px; }
+    .newsletter-box h3 { font-size: 18px; }
+  }
+
+  /* ─── MOBILE RESPONSIVE ─── */
+  @media (max-width: 768px) {
+
+    /* NAV */
+    nav {
+      padding: 0 16px;
+      height: auto;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 12px 16px;
+    }
+    .nav-links { display: none; }
+    .search-bar { display: none; }
+    .btn-join { padding: 8px 16px; font-size: 13px; }
+    .logo { font-size: 22px; }
+
+    /* HERO */
+    .hero {
+      flex-direction: column;
+      padding: 32px 20px 40px;
+      gap: 32px;
+      text-align: center;
+    }
+    .hero-left h1 { font-size: 26px; }
+    .hero-left p { font-size: 14px; max-width: 100%; }
+    .hero-btns { justify-content: center; flex-direction: column; align-items: center; gap: 14px; }
+    .btn-primary { width: 100%; justify-content: center; }
+    .btn-outline { width: 100%; }
+    .hero-right { width: 100%; }
+    .hero-card { max-width: 100%; padding: 28px 20px; min-height: 220px; }
+    .hero-card img { width: 70% !important; }
+
+    /* COLORFUL WORLD */
+    .section-world { padding: 40px 20px; }
+    .world-grid { grid-template-columns: 1fr; gap: 16px; }
+    .section-title { font-size: 22px; }
+    .worksheet-grid { grid-template-columns: 1fr 1fr; }
+
+    /* FEATURED FLASHCARDS */
+    section#products { padding: 40px 20px !important; }
+    .cards-grid { grid-template-columns: 1fr; gap: 20px; }
+    .featured-header { flex-direction: column; gap: 12px; }
+    .nav-arrows { align-self: flex-end; }
+
+    /* WHY PARENTS */
+    .section-why { padding: 40px 20px; }
+    .why-grid { grid-template-columns: 1fr 1fr; gap: 28px 20px; }
+
+    /* MY STORY */
+    section[style*="My Story"] div[style*="max-width: 1000px"] { padding: 0 !important; }
+
+    /* TESTIMONIALS */
+    .section-testimonials { padding: 40px 20px 0; }
+    .testi-grid { grid-template-columns: 1fr; gap: 16px; }
+
+    /* NEWSLETTER */
+    .section-newsletter { padding: 30px 20px 50px; }
+    .newsletter-box {
+      flex-direction: column;
+      padding: 28px 24px;
+      text-align: center;
+      gap: 20px;
+    }
+    .newsletter-form { flex-direction: column; width: 100%; }
+    .email-field { width: 100%; min-width: unset; }
+    .btn-join { width: 100%; text-align: center; }
+
+    /* WAITING LIST */
+    section#waitlist { padding: 50px 20px; }
+    section#waitlist > div > div[style*="padding:40px 44px"] {
+      padding: 28px 20px !important;
+    }
+
+    /* MY STORY CARD */
+    div[style*="padding: 56px 60px"] {
+      padding: 32px 24px !important;
+    }
+
+    /* FOOTER */
+    footer { padding: 32px 20px 20px; }
+    .footer-top {
+      grid-template-columns: 1fr 1fr;
+      gap: 28px 20px;
+    }
+    .footer-brand { grid-column: 1 / -1; }
+
+    /* GENERAL */
+    .section-why .why-grid .why-item { padding: 0 8px; }
+  }
+
+  @media (max-width: 480px) {
+    .hero-left h1 { font-size: 23px; }
+    .why-grid { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr; }
+    .newsletter-box h3 { font-size: 18px; }
+    section#waitlist > div > div[style*="padding"] {
+      padding: 24px 16px !important;
+    }
+    div[style*="padding: 56px 60px"] {
+      padding: 24px 16px !important;
+    }
+    .world-grid { grid-template-columns: 1fr; }
+    .worksheet-grid { grid-template-columns: 1fr 1fr 1fr; }
+  }
+
 </style>
 </head>
 <body>
